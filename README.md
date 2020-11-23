@@ -12,18 +12,30 @@ Collecting the data (using [pandas datareader](https://pydata.github.io/pandas-d
 <hr>
 <h1 align = "center"> Current status </h1>
 Collection and visualization of data from arbitrary timespan:
+
 ![GOOG stock example](https://github.com/olof98johansson/StockPrediction/blob/main/demonstration_images/goog_stocks_ex.png?raw=true)
+
 <br>
+
 ![Goog histogram example](https://github.com/olof98johansson/StockPrediction/blob/main/demonstration_images/goog_stocks_hist_ex.png?raw=true)
+
 <br>
+
 Using [plotly](https://plotly.com/python/) for python to make interactive plots in order to zoom and move in the graph:
+
 ![MSFT stock example](https://github.com/olof98johansson/StockPrediction/blob/main/demonstration_images/msft_stocks_ex.png?raw=true)
+
 ![MSFT stock example](https://github.com/olof98johansson/StockPrediction/blob/main/demonstration_images/msft_stocks_square_ex.png?raw=true)
+
 ![MSFT stock example](https://github.com/olof98johansson/StockPrediction/blob/main/demonstration_images/msft_stocks_zoom_ex.png?raw=true)
+
 <br>
 <br>
+
 Also, comparison of arbitrary number of stocks and visualize the correlation between them are also available:
+
 ![Comparison graphical](https://github.com/olof98johansson/StockPrediction/blob/main/demonstration_images/graph_corr.png?raw=true)
+
 ![Comparison graphical](https://github.com/olof98johansson/StockPrediction/blob/main/demonstration_images/corr_matrix.png?raw=true)
 
 <br>
