@@ -1,7 +1,4 @@
-<h1 align="center" style="color:red;"> OBS! </h1>
- This is not recommendations for trading real stocks and one should <span style="color:red">*NOT*</span> trade real money based on this!
-<br>
-<br>
+
 
 <h1 align="center> StockPrediction </h1>
 Hobby project in NLP with numerical time-series - stock market prediction based on the adjusted closing price, monthly gain and correlation among different industry-based companies from self build transformer model (to be done). Collecting the data (using [pandas datareader](https://pydata.github.io/pandas-datareader/index.html) library) from [yahoo finance](https://finance.yahoo.com/). Initial predictions are done on just the [adjusted closing price](https://www.investopedia.com/terms/a/adjusted_closing_price.asp) with a LSTM model with a linear bottleneck. The loss being used is MSE - $\mathcal{L}_{MSE}(\hat{y}) = \frac{1}{N}\sum_{i=1}^N\left(y_i - \hat{y}_i\right)^2$. Aim of the project is to build a transformer model from scratch and comparing its result with the LSTM network and doing so by ensemble results from different multi-feature predictions from different time periods.
