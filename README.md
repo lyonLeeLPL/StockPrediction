@@ -1,6 +1,5 @@
 <h1 align="center"> OBS! </h1>
 This is NOT buying recommendations for trading real stocks and one should **NOT** trade real money based on the results here! 
-<hr>
 
 <h1 align = "center"> Checklist </h1>
 <br>
