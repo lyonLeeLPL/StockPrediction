@@ -1,5 +1,7 @@
 <h1 align="center" style="color:red;"> OBS! </h1>
-<h4 align="center"> This is not recommendations for trading real stocks and one should <font color="red"> NOT </font> trade real money based on this </h4>
+ This is not recommendations for trading real stocks and one should <font color="red"> NOT </font> trade real money based on this!
+<br>
+<br>
 
 <h1 align="center> StockPrediction </h1>
 Hobby project in NLP with numerical time-series - stock market prediction based on the adjusted closing price, monthly gain and correlation among different industry-based companies from self build transformer model (to be done).
@@ -42,7 +44,8 @@ Also, comparison of arbitrary number of stocks and visualize the correlation bet
 <br>
 <hr>
 
-
+<h1 align = "center"> Checkpoints </h1>
+<br>
 
 | Checkpoint                                              | Status |
 | ------------------------------------------------- | ----   |
