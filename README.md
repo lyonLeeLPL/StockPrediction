@@ -1,9 +1,8 @@
 <h1 align="center"> OBS! </h1>
-<h4 align="center> This is NOT buying recommendations for trading real stocks and one should **NOT** trade real money based on the results here! </h4>
-      
-<br>
+This is NOT buying recommendations for trading real stocks and one should **NOT** trade real money based on the results here! 
 <hr>
-<h1 align = "center"> Checkpoints </h1>
+
+<h1 align = "center"> Checklist </h1>
 <br>
 
 | Checkpoint                                              | Status |
@@ -21,7 +20,7 @@
 | :black_circle: <input type="checkbox" disabled  checked/> Real-time update |  :clock930:    |
 
 
-
+<hr>
            
 
 
