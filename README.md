@@ -25,7 +25,8 @@ This is NOT buying recommendations for trading real stocks and one should **NOT*
 
 <h1 align="center"> StockPrediction </h1>
 
-Hobby project in NLP with numerical time-series - stock market prediction based on the adjusted closing price, monthly gain and correlation among different industry-based companies from self build transformer model (to be done). Collecting the data (using pandas datareader from [yahoo finance](https://finance.yahoo.com/)). Initial predictions are done on just the [adjusted closing price](https://www.investopedia.com/terms/a/adjusted_closing_price.asp) with a LSTM model with a linear bottleneck. The loss being used is MSE: 
+Hobby project in NLP with numerical time-series - stock market prediction based on the adjusted closing price, monthly gain and correlation among different industry-based companies from self build transformer model (to be done). Collecting the data (using pandas datareader from [yahoo finance](https://finance.yahoo.com/)). Initial predictions are done on just the [adjusted closing price](https://www.investopedia.com/terms/a/adjusted_closing_price.asp) with a LSTM model with a linear bottleneck. The loss being used is MSE $'\mathcal{L}_{MSE}(\hat{y}) = \frac{1}{N}\sum_{i=1}^N\left(y_i - \hat{y}_i\right)^2'$: 
+
 <a href="https://www.codecogs.com/eqnedit.php?latex=\mathcal{L}_{MSE}(\hat{y})&space;=&space;\frac{1}{N}\sum_{i=1}^N\left(y_i&space;-&space;\hat{y}_i\right)^2" target="_blank">
 <img src="https://latex.codecogs.com/gif.latex?\mathcal{L}_{MSE}(\hat{y})&space;=&space;\frac{1}{N}\sum_{i=1}^N\left(y_i&space;-&space;\hat{y}_i\right)^2" class="center" title="\mathcal{L}_{MSE}(\hat{y}) = \frac{1}{N}\sum_{i=1}^N\left(y_i - \hat{y}_i\right)^2" /></a>. 
 
