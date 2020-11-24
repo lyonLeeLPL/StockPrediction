@@ -4,20 +4,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
-import plotly.figure_factory as ff
 sns.set_style('whitegrid')
 plt.style.use("fivethirtyeight")
-import random
-
-
-# Collect data from yahoo finance
-from pandas_datareader.data import DataReader
-
-# For time stamps
-from datetime import datetime
-
 
 from sklearn.preprocessing import MinMaxScaler
 
@@ -30,22 +18,35 @@ class Dataset(object):
 
 
     def get_dataset(self, scale=True):
+        '''
+            Input: scale - if to scale the input data
+        '''
         data = self.df.filter([str(self.feature)])
         self.data_values = data.values
         if scale:
-            scaler = MinMaxScaler(feature_range=(0, 1))
-            self.dataset = scaler.fit_transform(self.data_values)
+            self.scaler = MinMaxScaler(feature_range=(0, 1))
+            self.dataset = self.scaler.fit_transform(self.data_values)
 
         else:
             self.dataset = self.data_values
 
-        return self.dataset
 
     def get_size(self):
+        '''
+            Output: returns the length of the dataset
+        '''
         return len(self.dataset)
 
 
     def split(self, train_split_ratio = 0.8, time_period = 30):
+        '''
+            Input: train_split_ratio - percentage of dataset to be used for
+                                       the training data (float)
+                   time_period - time span in days to be predicted (in)
+
+            Output: lists of the training and validation data (input values and target values)
+                    size of the training data
+        '''
         train_data_size = int(np.ceil(self.get_size() * train_split_ratio))
         self.train_data = self.dataset[0:int(train_data_size), :]
         x_train, y_train = [], []
@@ -54,7 +55,7 @@ class Dataset(object):
             y_train.append(self.train_data[i, 0])
 
         self.y_train = np.array(y_train)
-        self.x_train = np.reshape(np.array(x_train), np.array(x_train).shape[0], np.array(x_train).shape[1], 1)
+        self.x_train = np.reshape(np.array(x_train), (np.array(x_train).shape[0], np.array(x_train).shape[1], 1))
         print(f'Shape of train data: (x, y) = ({np.shape(self.x_train)}, {np.shape(self.y_train)})')
 
         self.test_data = self.dataset[train_data_size - time_period:, :]
@@ -64,7 +65,8 @@ class Dataset(object):
             x_test.append(self.test_data[i - time_period:i, 0])
 
         self.x_test = np.reshape(np.array(x_test), (np.array(x_test).shape[0], np.array(x_test).shape[1], 1))
-        return [self.x_train, self.y_train], [self.x_test, self.y_test]
+        print(f'Shape of test data: (x, y) = ({np.shape(self.x_test)}, {np.shape(self.y_test)})')
+        return [self.x_train, self.y_train], [self.x_test, self.y_test], train_data_size
 
 
 
