@@ -19,11 +19,6 @@ This is NOT buying recommendations for trading real stocks and one should **NOT*
 | :black_circle: <input type="checkbox" disabled  checked/> Real-time update |  :clock930:    |
 
 
-| Checkpoint |  Datacollection  |  Initial feature engineering |  Visualization | Implement basic model |  Initial predictions | Multi-feature predictions |  Improved visualization |  Build own transformer model | Start build dash app |  Deploy dash app | Real-time update |
-| ------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- |
-| Status | :heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :clock930: | :clock930: | :clock930: | :clock930: | :clock930: | :clock930: |
-
-
 
 <hr>
            
