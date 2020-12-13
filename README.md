@@ -13,7 +13,8 @@ This is NOT buying recommendations for trading real stocks and one should **NOT*
 | ◾ <input type="checkbox" disabled  checked/> Initial predictions |  :heavy_check_mark:    |
 | ◾ <input type="checkbox" disabled  checked/> Multi-feature predictions |   :clock930:   |
 | ◾ <input type="checkbox" disabled  checked/> Improved visualization |  :clock930:    |
-| ◾ <input type="checkbox" disabled  checked/> Build own transformer model |  :clock930:    |
+| ◾ <input type="checkbox" disabled  checked/> Create transformer model |  :heavy_check_mark:    |
+| ◾ <input type="checkbox" disabled  checked/> Convert transformer to numerical model |  :clock930:   |
 | ◾ <input type="checkbox" disabled  checked/> Start build dash app |  :clock930:    |
 | ◾ <input type="checkbox" disabled  checked/> Deploy dash app |  :clock930:    |
 | ◾ <input type="checkbox" disabled  checked/> Real-time update |  :clock930:    |
