@@ -4,19 +4,19 @@ This is NOT buying recommendations for trading real stocks and one should **NOT*
 <h1 align = "center"> Checklist </h1>
 <br>
 
-| Checkpoint                                              | Status |
+| 📌 Checkpoints                                              | Status |
 | ------------------------------------------------- | ----   |
-| :black_circle: <input type="checkbox" disabled checked /> Datacollection  |  :heavy_check_mark:    |
-| :black_circle: <input type="checkbox" disabled  checked/>  Initial feature engineering |  :heavy_check_mark:    |
-| :black_circle: <input type="checkbox" disabled  checked/> Visualization |  :heavy_check_mark:    |
-| :black_circle: <input type="checkbox" disabled  checked/> Implement basic model |  :heavy_check_mark:    |
-| :black_circle: <input type="checkbox" disabled  checked/> Initial predictions |  :heavy_check_mark:    |
-| :black_circle: <input type="checkbox" disabled  checked/> Multi-feature predictions |   :clock930:   |
-| :black_circle: <input type="checkbox" disabled  checked/> Improved visualization |  :clock930:    |
-| :black_circle: <input type="checkbox" disabled  checked/> Build own transformer model |  :clock930:    |
-| :black_circle: <input type="checkbox" disabled  checked/> Start build dash app |  :clock930:    |
-| :black_circle: <input type="checkbox" disabled  checked/> Deploy dash app |  :clock930:    |
-| :black_circle: <input type="checkbox" disabled  checked/> Real-time update |  :clock930:    |
+| ◾ <input type="checkbox" disabled checked /> Datacollection  |  :heavy_check_mark:    |
+| ◾ <input type="checkbox" disabled  checked/>  Initial feature engineering |  :heavy_check_mark:    |
+| ◾ <input type="checkbox" disabled  checked/> Visualization |  :heavy_check_mark:    |
+| ◾ <input type="checkbox" disabled  checked/> Implement basic model |  :heavy_check_mark:    |
+| ◾ <input type="checkbox" disabled  checked/> Initial predictions |  :heavy_check_mark:    |
+| ◾ <input type="checkbox" disabled  checked/> Multi-feature predictions |   :clock930:   |
+| ◾ <input type="checkbox" disabled  checked/> Improved visualization |  :clock930:    |
+| ◾ <input type="checkbox" disabled  checked/> Build own transformer model |  :clock930:    |
+| ◾ <input type="checkbox" disabled  checked/> Start build dash app |  :clock930:    |
+| ◾ <input type="checkbox" disabled  checked/> Deploy dash app |  :clock930:    |
+| ◾ <input type="checkbox" disabled  checked/> Real-time update |  :clock930:    |
 
 
 
