@@ -26,7 +26,7 @@ class config:
     dys = 0
 
     # Starting of with google stocks
-    #stock_names = ['GOOG', 'AAPL', 'MSFT', 'AMZN']
+    stock_names_compare = ['GOOG', 'AAPL', 'MSFT', 'AMZN']
     stock_names = ['GOOG']
 
     moving_averages = [int(np.floor(365 / 2)), int(np.floor(365 / 4)), 30, 14, 7]

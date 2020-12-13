@@ -2,8 +2,8 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
-sns.set_style('whitegrid')
-plt.style.use("fivethirtyeight")
+#sns.set_style('whitegrid')
+#plt.style.use("fivethirtyeight")
 
 # Scripts
 from preprocess import config, get_timestamps, collect_data, plot_closing, plot_gain, compare_stocks
@@ -19,6 +19,7 @@ def visualization():
         fig1.show()
         fig2 = plot_gain(df)
         fig2.show()
+        daily_returns, fig1_c, fig2_c = compare_stocks(config.stock_names_compare, timestamps)
 
 
 def make_predictions(features):
