@@ -55,12 +55,13 @@ def get_timestamps(yrs=0, mths=0, dys=0):
 
 # Collecting data from yahoo finance to dataframe
 
-def collect_data(timestamps, stock_name, moving_averages=None, include_gain=True):
+def collect_data(timestamps, stock_name, moving_averages=None, include_gain=True, compute_volatility = False):
     '''
         Input: timestamps - start and end time of the time period to track time
                stock_name - code of the stock from the specific company
                moving_averages - list of the time period to compute moving averages (default None)
                invlude_gain - boolean if include the daily change of the stock price (default True)
+               compute_volatility - boolean if to compute the volatility from the daily return (default False)
 
         Output: Dataframe of the stock for the selected time period
     '''
@@ -76,15 +77,25 @@ def collect_data(timestamps, stock_name, moving_averages=None, include_gain=True
     if moving_averages is not None:
         for ma in moving_averages:
             if 3 * ma < len(df_stock):
-                column_name = f"{ma} days MA"
-                df_stock[column_name] = df_stock['Adj Close'].rolling(ma).mean()
+                ma_column_name = f"{ma} days MA"
+                df_stock[ma_column_name] = df_stock['Adj Close'].rolling(ma).mean()
 
     if include_gain:
         change = (df_stock['Adj Close'] / df_stock['Open']).tolist()
         df_stock['Change %'] = change
         df_stock['Daily Return'] = df_stock['Adj Close'].pct_change()
 
+        # Volatility is computed as the standard deviation of the daily return
+        if compute_volatility:
+            df_stock['Volatility (30 days)'] = df_stock['Daily Return'].rolling(30).std(ddof=0)
+
+            # Sharpe ratio is the daily return divided by the volatility
+            sharpe_ratio = (df_stock['Daily Return'] / df_stock['Volatility (30 days)']).tolist()
+            df_stock['Sharpe Ratio'] = sharpe_ratio
+
     return df_stock
+
+
 
 
 # Plot functions
